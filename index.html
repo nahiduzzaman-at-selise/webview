@@ -4,12 +4,11 @@
         <meta charset="UTF-8">
         <script type="text/javascript">
             function subscribe(){
-                window.nsWebViewBridge.emit('gotMessage', {value: 'test'});
-                alert('Subscribed');
+                window.nsWebViewBridge.emit('Subscribed', {value: 'subscribed !!!'});
             }
 
             function unsubscribe(){
-                alert('Unsubscribed');
+                window.nsWebViewBridge.emit('Unsubscribed', {value: 'unsubscribed !!!'});
             }
         </script>
     </head>
